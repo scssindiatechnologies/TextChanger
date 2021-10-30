@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Changer</title>
+    <style>
+        p{
+            text-align:center;
+            margin:auto; 
+            margin-bottom: 10px;
+        }
+        #myDIV{
+            border:1px solid black; 
+            height:50px; 
+            width:200px; 
+            text-align:center; 
+            margin: auto; 
+            padding-top:25px; 
+            font-size: 25px;
+        }
+        .buttons{
+            margin:auto; 
+            width:200px; 
+            text-align:center; 
+            margin-top:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Old-New Text Changer</p>
+
+    <div id="myDIV">Hello World</div>
+    <div class="buttons" style="">
+        <button onclick="myFunction1()">OLD TEXT</button>
+        <button onclick="myFunction2()">NEW TEXT</button>
+    
+
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("myDIV");
+            x.innerHTML ="Hello World"
+        }
+        function myFunction2() {
+            var x = document.getElementById("myDIV");
+            x.innerHTML ="Hello Javascript"
+        }
+    </script>
+
+</body>
+
+</html>
